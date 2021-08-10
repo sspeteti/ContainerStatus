@@ -1,0 +1,43 @@
+<nav>
+    <ul>
+        <li style="background-color: lightgray;"><a>Vessel Planning</a></li>
+        <li><a>Yard Planning</a></li>
+        <li><a>Rail Planning</a></li> 
+    </ul>
+</nav>
+<nav><ul><li><a>Vessel 01<b>>checklist</b></a></li></ul></nav>
+<section class="container">
+        <div class="box1">
+          <h3><u><b>TaskBoard</b></u></h3><span></span>
+         <div>
+            <ol>
+              <a><li *ngFor="let task of tasks; let i=index; trackBy: trackItem" class="options" (click)= "sendtask(task)" >
+                         <span class="dot" id="cir" name="taskname"
+                         [ngClass]="{'grey':task.status==='Notdone', 
+                         'yellow':task.status==='Inprogress',
+                         'green':task.status==='Done',
+                         'sizeup':true}" ></span>
+                {{ task.name }}
+                </li></a>
+            </ol>
+          </div> 
+        </div>
+         <div class="box2">
+          <img src ="./assets/images/tbacompany.jpg" alt="image" class="image">
+          <div style="display:flex" class="footer">
+            <p style="margin-top:0px; margin-right: 5%;">Status: </p>
+            <button type="submit" class="btn btn-primary setb" (click)="setNotdone()"> Notdone</button>
+            <button type="submit" class="btn btn-primary setb" (click)="setInprogress()">InProgress</button>
+            <button type="submit" class="btn btn-primary setb" (click)="setCompleted()"> Complete</button>
+          </div>
+        </div>           
+</section>
+
+
+
+<!-- <div class="row">
+  <div class="col">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+  <div class="col">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.</div>
+</div> -->
+
+ 

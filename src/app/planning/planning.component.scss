@@ -1,0 +1,196 @@
+nav{
+    background-color: white;
+    //border: 2px solid black;
+    width: 70%;
+    border-top: 0px !important;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black ;
+    border-right: 2px solid black;
+}
+
+nav ul{
+    text-align: center;
+    display: inline-block;
+}
+
+nav li{
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+}
+
+nav ul li a{
+    font-size: 15px;
+    display: block;
+    color: black;
+    padding: 8px 10px;
+    margin: 0px 5px;
+    font-weight: 500;
+    border-top: 4px solid transparent;    
+    border-bottom: 4px solid transparent;
+    border-radius: 2px;
+    transition-property: border-bottom,background-color;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+nav ul li a:hover{
+    //background-color: white;
+    border-top: 4px solid rgb(0, 60, 255);
+    cursor: pointer;
+}
+
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0; 
+    cursor: pointer;
+}
+li{
+  cursor: pointer;
+}
+
+li.options:active{
+  background-color: aquamarine;
+}
+
+
+
+.special{
+    background-color: aquamarine;
+}
+
+.p{
+    padding: 8px 10px;
+    margin: 0px 5px;
+    font-weight: 500; 
+    border-top-width: 0.5px; 
+}
+
+.section{
+    width:70px;
+    background-color:grey;
+}
+  
+  /* Create two unequal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 24%;
+    border: 1px solid black;
+    background-color: lightgrey;
+    max-height: 100%;
+  }
+  
+  .right {
+    width: 75%;
+    border: 1px solid black;
+  }
+
+  .container{
+      display: flex;
+      border:1px soild black;
+      width: 70%
+ }
+  .box1{
+    flex:2;
+    //background-color: lightgrey;
+    //border: 2px solid black;
+    border-top: 0px !important;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black ;
+    border-right: 2px solid black;
+    //cursor: pointer;
+
+  }
+  .box2{
+    flex:5;
+    //border: 2px solid black;
+    border-top: 0px !important;
+    border-bottom: 2px solid black;
+    //border-left: 2px solid black ;
+    border-right: 2px solid black;
+  }
+
+ .options{
+    margin-bottom: 15px;
+    //background-color: lightgrey;
+ }
+
+ .options:active{
+  background: color #9db8cf;;
+ }
+
+ .bstyle{
+    height: 40%;
+    border: 1px solid black;
+    width: 50%;
+ }
+.inner
+{
+    display: inline-block;
+}
+.gridwidth{
+    width: 100%;
+}
+
+.margintopbottom{
+    margin-top: 20px;
+    margin-bottom : 20px;
+}
+
+.dot {
+  height: 20px;
+  width: 20px;
+  background-color:grey;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: -10%;
+  float: right;
+}
+
+.red{
+  background-color:red;
+}
+.green{
+  background-color:green;
+}
+.yellow{
+  background-color:#FFFF00;
+}
+.footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  text-align: right;
+  margin-right: 3%;
+  float: right;
+  max-height: 6%;
+}
+
+#leftsideMenu ul li {
+  border-bottom: 1px dashed lightgray;
+  background-color: cadetblue;
+}
+.setb{
+  //border: 1px solid black; 
+}
+.image{
+  width:100%;
+  //margin-bottom: 5%;
+  border-bottom: 2px solid black;
+}
+
+.row {
+  display: flex; /* equal height of the children */
+  width: 75%;
+}
+
+.col {
+  flex: 1; /* additionally, equal width */
+  padding: 1em;
+  border: 1px thin black;
+}
+
+
