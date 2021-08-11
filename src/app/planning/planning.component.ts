@@ -51,13 +51,14 @@ export class PlanningComponent implements OnInit {
    status={green:'Done',yellow:'Inprogress', grey:'Notdone'}    
     public currenttask:any = {};
     public taskDetails!: FormGroup;
+    elefocus!: boolean;
     
     constructor(  private router: Router) { }
   
     ngOnInit(): void {
     }
     sendtask(e: any){
-      
+      this.elefocus=true;
       this.currenttask=e;
       let selectedTask={
         'name':this.currenttask.name,
